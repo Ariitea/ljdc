@@ -1,34 +1,72 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <title>La Jardinerie du Châlet</title>
-    <link rel="stylesheet" href="master.css">
-  </head>
-  <body>
-      <div class="container">
-          <nav>
-            <input type="checkbox" id="nav" class="hidden">
-            <label for="nav" class="na-btn">
-              <i></i>
-              <i></i>
-              <i></i>
-          </label>
-          <div class="logo">
-              <a href="#">La Jardinerie du Châlet</a>
-          </div>
-          <div class="nav-wrapper">
-              <ul>
-                  <li><a href="#">Acceuil</a></li>
-                  <li><a href="#">Produits</a></li>
-                  <li><a href="#">Événements</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
-          </div>
-        </nav>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NavNav</title>
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+<body>
 
-      </div>
-  </body>
+     <h1>La Jardinerie du Châlet</h1>
+
+     <div class="toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+     </div>
+
+     <div class="menu">
+          <div class="data">
+               <ul>
+                    <li>Menu</li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Produits</a></li>
+                    <li><a href="#">Événements</a></li>
+                    <li><a href="#">À Propos</a></li>
+                    <li><a href="#">Contact</a></li>
+               </ul>
+          </div>
+     </div>
+
+<script type="text/javascript">
+
+var t1 = new TimelineMax({paused: true});
+
+t1.to(".one", 0.3, {
+     y: 6,
+     rotation: 45,
+     ease: Expo.easeInOut
+});
+t1.to(".two", 0.3, {
+     y: -6,
+     rotation: -45,
+     ease: Expo.easeInOut,
+     delay: -0.1
+});
+
+t1.to(".menu", 0.8, {
+     top: "0%",
+     ease: Expo.easeInOut,
+     delay: -0.3
+});
+
+t1.staggerFrom(".menu ul li", 1, {x: -200, opacity: 0, ease:Expo.easeOut}, 0.2);
+
+t1.reverse();
+$(document).on("click", ".toggle-btn", function() {
+     t1.reversed(!t1.reversed());
+});
+$(document).on("click", "a", function() {
+     t1.reversed(!t1.reversed());
+});
+
+
+</script>
+
+</body>
 </html>
