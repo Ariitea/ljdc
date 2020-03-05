@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-     background-color: #fff;
+     background-color: #000;
 }
 
 h1 {
@@ -24,21 +24,21 @@ h1 {
 .bg-image{
 
   /* The image used */
-  background-image: url("hero4.jpg");
+  /* background-image: url("hero4.jpg"); */
 
    /* Add the blur effect */
-   filter: blur(5px);
-   -webkit-filter: blur(5px);
+   /* filter: blur(5px); */
+   /* -webkit-filter: blur(5px); */
 
    /* Removing white borders */
-   height: 100vh;
-   width: 100vw;
+   /* height: 100vh; */
+   /* width: 100vw; */
 
    /* Center and scale the image nicely */
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   z-index: 0;
+   /* background-position: center; */
+   /* background-repeat: no-repeat; */
+   /* background-size: cover; */
+   /* z-index: 0; */
 }
 
 .toggle-btn {
@@ -55,14 +55,14 @@ span.one {
      position: absolute;
      width: 40px;
      height: 5px;
-     background: #669e80;
+     background: #fff;
 }
 
 span.two {
      position: absolute;
      width: 40px;
      height: 5px;
-     background: #669e80;
+     background: #fff;
      margin-top: 12px;
 }
 
