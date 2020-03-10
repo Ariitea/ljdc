@@ -6,22 +6,25 @@ html, body {
 }
 
 body {
-     background-color: #000;
+     background: #202f3c;
 }
 
 h1 {
      position: absolute;
-     top: 50%;
+     top: 105%;
      left: 50%;
      transform: translate(-50%, -50%);
      color: #fff;
-     font-size: 48px;
+     font-size: 30px;
      font-family: 'Montserrat', sans-serif;
      font-weight: light;
      text-align: left;
 }
 
 .bg-image{
+
+  background-image: url("Maintenance.jpg");
+  background-size: cover;
 
   /* The image used */
   /* background-image: url("hero4.jpg"); */
@@ -31,14 +34,14 @@ h1 {
    /* -webkit-filter: blur(5px); */
 
    /* Removing white borders */
-   /* height: 100vh; */
-   /* width: 100vw; */
+   height: 100vh;
+   width: 100vw;
 
    /* Center and scale the image nicely */
-   /* background-position: center; */
-   /* background-repeat: no-repeat; */
-   /* background-size: cover; */
-   /* z-index: 0; */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 0;
 }
 
 .toggle-btn {
