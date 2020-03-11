@@ -24,7 +24,6 @@ h1 {
 .bg-image{
 
   background-image: url("Maintenance.jpg");
-  background-size: cover;
 
   /* The image used */
   /* background-image: url("hero4.jpg"); */
