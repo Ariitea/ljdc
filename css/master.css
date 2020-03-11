@@ -2,7 +2,7 @@ html, body {
      margin: 0;
      padding: 0;
      width: 100%;
-     height: 100%;
+     height: 120vh;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 
 h1 {
      position: absolute;
-     top: 50%;
+     top: 105%;
      left: 50%;
      transform: translate(-50%, -50%);
      color: #fff;
